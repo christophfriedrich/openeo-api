@@ -106,7 +106,7 @@ schema:
 
 ## Lists of resources
 
-Clients will assume that all lists of resources are the a combination of all back-ends listed in `GET /`.
+Clients will assume that all lists of resources are a combination of all back-ends listed in `GET /`.
 Federated APIs can expose if any of the back-ends is not available and thus is not part of the response.
 
 Applies to:
@@ -157,6 +157,8 @@ schema:
 
 Every discoverable resource that is defined as an object and allows to contain additional properties, can list the backends that support or host the exposed resource/functionality.
 This can also be embeded deeply into a hierarchical structure, e.g. for process or file format parameters.
+
+### OpenAPI fragment
 
 ```yaml
 schema:
